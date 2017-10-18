@@ -5,6 +5,7 @@
 
 # testing
 /coverage
+nightwatch.conf.js
 nightwatchProps.js
 /tests_output
 
