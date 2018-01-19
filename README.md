@@ -1,17 +1,41 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
-# Project Summary
+# 2.5 Assessment
+
+## Setup
+
+Fork this repository, clone it to your computer, and then `cd` into the repository folder.  As usual, `npm i` will install the needed dependencies and `npm start` will run the app.  You'll need to open a second terminal to run your tests using the `nightwatch` command.
+
+## Your Assessment
 
 This project includes several small pieces of functionality.  We will be testing all of them!  Remember that to set up your testing, you can:
 
-1. Copy and paste an existing `nightwatch.conf.js` and `nightwatchProps.js`
-2. Write a new `nightwatch.conf.js`, following the specs on nightwatchjs.org
-3. Create your test framework, usually a "tests" or "nightwatch" folder in the repository's base directory, and testing/resource folders inside of that
-4. Plan WHAT should be tested
-5. Plan HOW you can test this
-6. Figure out what information you'll need (test data)
-7. Are there frequently used functions you can break out into their own?
-8. Start writing!  Write your tests in plain English first, and then go to code
+1. Copy and paste an existing `nightwatchProps.js`
+1. Create your test framework, usually a "tests" or "nightwatch" folder in the repository's base directory, and testing/resource folders inside of that.
+   * The existing `nightwatch.conf.js` file is expecting your tests to be in a `nightwatch/tests` folder; if you wanted to do something different, you are more than welcome to, but don't forget to update the `"src_folders"` property of the `nightwatch.conf.js` file appropriately.
+1. Plan WHAT should be tested
+   * Start with one test for each piece of functionality and get as far as you can, before you worry about testing the same piece multiple ways.
+1. Plan HOW you can test these items
+   * You can pop this information out into JIRA if it will be helpful for you, but that is not required for this assessment
+1. Gather selectors.  I do want to see a selectors file for this step
+1. What test data will you need?  You *can* but don't have to have a separate file for the test data
+1. Start writing!
+
+If you aren't sure where to get started, an easy way to organize your tests is to write your steps in comments, and then in code.
+
+For example, based on the **Odds and Evens** bit of functionality:
+```js
+    'Odds and Evens' : browser => {
+        //input numbers
+
+        //click sort button
+
+        //check even output
+
+        //check odd output
+
+    }
+```
 
 ## Functionality
 
