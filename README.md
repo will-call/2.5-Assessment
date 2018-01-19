@@ -1,6 +1,6 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
-# 2.5 Assessment
+# 2.5 Assessment - Automation Basics
 
 ## Setup
 
