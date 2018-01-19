@@ -37,6 +37,15 @@ For example, based on the **Odds and Evens** bit of functionality:
     }
 ```
 
+### Helpful NightwatchJS Commands
+
+`.click()` - we'll use this one
+`.setValue()` - we'll set that for sure
+`.expect.element().text.to.equal()` - just like testing the calculator...
+`.expect.element().text.to.contain()` - works exactly the same as the above, except that it looks for something to appear SOMEWHERE in the element's text, not for an exact match.  (`{hello: 'world', goodnight: 'moon'}` could have a match for "hello" or "moon" if we used this command)
+
+Look at the [NightwatchJS API docs for more details](http://nightwatchjs.org/api).
+
 ## Functionality
 
 ### Odds and Evens
