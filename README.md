@@ -10,15 +10,16 @@ Fork this repository, clone it to your computer, and then `cd` into the reposito
 
 This project includes several small pieces of functionality.  We will be testing all of them!  Remember that to set up your testing, you can:
 
-1. Copy and paste an existing `nightwatchProps.js`
+1. Copy and paste an existing `nightwatch.props.js`.
 1. Create your test framework, usually a "tests" or "nightwatch" folder in the repository's base directory, and testing/resource folders inside of that.
    * The existing `nightwatch.conf.js` file is expecting your tests to be in a `nightwatch/tests` folder; if you wanted to do something different, you are more than welcome to, but don't forget to update the `"src_folders"` property of the `nightwatch.conf.js` file appropriately.
-1. Plan WHAT should be tested
+1. Plan WHAT should be tested.
    * Start with one test for each piece of functionality and get as far as you can, before you worry about testing the same piece multiple ways.
-1. Plan HOW you can test these items
-   * You can pop this information out into JIRA if it will be helpful for you, but that is not required for this assessment
-1. Gather selectors.  I do want to see a selectors file for this step
-1. What test data will you need?  You *can* but don't have to have a separate file for the test data
+1. Plan HOW you can test these items.
+   * You can put this information into JIRA if it will be helpful for you, but it is not required for this assessment.
+1. Gather selectors.  I do want to see a selectors file for this step.
+1. What test data will you need?  You *can* but don't have to have a separate file for the test data.
+   * If you need help for any of this old projects are fair game, the internet is fair game, but I'd prefer you don't discuss this much amongst yourselves.
 1. Start writing!
 
 If you aren't sure where to get started, an easy way to organize your tests is to write your steps in comments, and then in code.
@@ -74,7 +75,7 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 
 ## Copyright
 
-© DevMountain LLC, 2017. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
+© DevMountain LLC, 2018. Unauthorized use and/or duplication of this material without express and written permission from DevMountain, LLC is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to DevMountain with appropriate and specific direction to the original content.
 
 <p align="center">
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
