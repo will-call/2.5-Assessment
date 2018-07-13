@@ -1,4 +1,3 @@
-const properties = require('./nightwatch.props')
 module.exports = {
     "src_folders" : "nightwatch/tests",    
     "page_objects_path" : "nightwatch/pages",
@@ -9,7 +8,10 @@ module.exports = {
       "log_path" : "",
       "port" : 4445,
       "cli_args" : {
-        "webdriver.chrome.driver" : properties.resourcePath + properties.chromedriver,
+        "webdriver.chrome.driver" : './seleniumAndDrivers/chromedriver.exe',
+        "webdriver.edge.driver" : './seleniumAndDrivers/MicrosoftWebDriver.exe',
+        "webdriver.gecko.driver" : './seleniumAndDrivers/geckodriver.exe',
+
       }
     },
   
@@ -37,8 +39,11 @@ module.exports = {
   
       "edge" : {
         "desiredCapabilities": {
-          "browserName": "MicrosoftEdge"
+          "browserName": "MicrosoftEdge",
+          "marionette": true
         }
-      }
+      },
+      
+      "workers" : "auto",
     }
   }

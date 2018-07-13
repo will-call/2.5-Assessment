@@ -1,12 +1,42 @@
-11:34:41.044 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.11.0', revision: 'e59cfb3'
-11:34:41.047 INFO [GridLauncherV3$1.launch] - Launching a standalone Selenium Server on port 4445
-2018-07-13 11:34:41.161:INFO::main: Logging initialized @357ms to org.seleniumhq.jetty9.util.log.StdErrLog
-11:34:41.415 INFO [SeleniumServer.boot] - Welcome to Selenium for Workgroups....
-11:34:41.415 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4445
-11:34:41.727 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptSslCerts: true, browserName: chrome, javascriptEnabled: true, name: Tests}
-11:34:41.729 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 29045
+11:50:12.549 INFO [GridLauncherV3.launch] - Selenium build info: version: '3.11.0', revision: 'e59cfb3'
+11:50:12.551 INFO [GridLauncherV3$1.launch] - Launching a standalone Selenium Server on port 4445
+2018-07-13 11:50:12.666:INFO::main: Logging initialized @361ms to org.seleniumhq.jetty9.util.log.StdErrLog
+11:50:12.896 INFO [SeleniumServer.boot] - Welcome to Selenium for Workgroups....
+11:50:12.897 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4445
+11:50:13.441 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptSslCerts: true, browserName: MicrosoftEdge, javascriptEnabled: true, marionette: true, name: Tests}
+11:50:13.441 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptSslCerts: true, browserName: chrome, javascriptEnabled: true, name: Tests}
+11:50:13.441 INFO [ActiveSessionFactory.apply] - Capabilities are: Capabilities {acceptSslCerts: true, browserName: firefox, javascriptEnabled: true, marionette: true, name: Tests}
+11:50:13.443 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+11:50:13.443 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+11:50:13.443 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.remote.server.ServicedSession$Factory (provider: org.openqa.selenium.edge.EdgeDriverService)
+Starting ChromeDriver 2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91) on port 31543
 Only local connections are allowed.
-11:34:43.815 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-11:34:44.032 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c194fdc9fd7fa17efc910134e0660b7e (org.openqa.selenium.chrome.ChromeDriverService)
-11:34:46.045 INFO [ActiveSessions$1.onStop] - Removing session c194fdc9fd7fa17efc910134e0660b7e (org.openqa.selenium.chrome.ChromeDriverService)
+[11:50:13.520] - Listening on http://localhost:4298/ 
+1531504213560	geckodriver	INFO	geckodriver 0.20.1
+1531504213567	geckodriver	INFO	Listening on 127.0.0.1:8631
+1531504214172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\wandr\\AppData\\Local\\Temp\\rust_mozprofile.jky0gDPx32NA"
+11:50:14.939 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+11:50:15.333 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4D4703CC-377C-4BE9-88B1-1C18FC06BCAF (org.openqa.selenium.edge.EdgeDriverService)
+11:50:15.583 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+11:50:15.655 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2c6add8850be4764e784ec417aab1314 (org.openqa.selenium.chrome.ChromeDriverService)
+Unable to read VR Path Registry from C:\Users\wandr\AppData\Local\openvr\openvrpaths.vrpath
+1531504215996	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\wandr\AppData\Local\openvr\openvrpaths.vrpath
+11:50:16.387 INFO [ActiveSessions$1.onStop] - Removing session 4D4703CC-377C-4BE9-88B1-1C18FC06BCAF (org.openqa.selenium.edge.EdgeDriverService)
+[11:50:16.395] - Stopping server.
+Unable to read VR Path Registry from C:\Users\wandr\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\wandr\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\wandr\AppData\Local\openvr\openvrpaths.vrpath
+1531504217508	Marionette	INFO	Listening on port 56126
+11:50:17.915 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+11:50:17.930 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fc109d0e-0224-412f-b4fb-f18cd971e7c2 (org.openqa.selenium.firefox.GeckoDriverService)
+11:50:17.972 INFO [ActiveSessions$1.onStop] - Removing session 2c6add8850be4764e784ec417aab1314 (org.openqa.selenium.chrome.ChromeDriverService)
+[Parent 20836, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20660, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20660, Chrome_Chi[Child 7976, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7976, Chrome_ChildThread] WARNING: pipe error: 109: file[Parent 20836, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16320, Chro*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 15484, Chrome_ChildThr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+11:50:21.219 INFO [ActiveSessions$1.onStop] - Removing session fc109d0e-0224-412f-b4fb-f18cd971e7c2 (org.openqa.selenium.firefox.GeckoDriverService)
