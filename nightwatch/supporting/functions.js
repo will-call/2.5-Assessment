@@ -8,17 +8,12 @@
 let evensAndOddsChecker = (browser, selectors, data) => {
     browser
         .waitForElementPresent(selectors.input, 1000)
-        //input numbers
         .setValue(selectors.input, data.testNumbers)
-        //verify input
         .verify.value(selectors.input, data.testNumbers)
-        //click split button
         .click(selectors.splitButton)
-        //check even numbers
-        .expect.element(selectors.evenResults).text.to.equal(data.evensCheck)
+        .expect.element(selectors.evenResults).text.to.contain('2', '4')
     browser
-        //check odd numbers
-        .expect.element(selectors.oddResults).text.to.equal(data.oddsCheck)
+        .expect.element(selectors.oddResults).text.to.contain(data.oddsCheck)
 }
 
 /**

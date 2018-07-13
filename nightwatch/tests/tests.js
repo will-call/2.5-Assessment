@@ -1,24 +1,25 @@
-const selectors = require('../supporting/selectors')
-const functions = require('../supporting/functions')
 const data = require('../supporting/data')
+
+main = {}
 
 module.exports = {
     beforeEach : browser => {
-        browser.url('http://localhost:3000')
+        main = browser.page.main()
+        main.navigate()
     },
 
     after : browser => {
         browser.end()
     },
 
-    'Odds and Evens Test' : browser => functions.evensAndOddsChecker(browser, selectors.oddsAndEvens, data.oddsAndEvens),
+    'Odds and Evens Test' : browser => main.evensAndOddsChecker(data.oddsAndEvens),
 
-    'Filter Object Test' : browser => functions.filterObjectChecker(browser, selectors.filterObject, data.filterObject),
+    'Filter Object Test' : browser => main.filterObjectChecker(data.filterObject),
 
-    'Filter String Test' : browser => functions.filterStringChecker(browser, selectors.filterString, data.filterString),
+    'Filter String Test' : browser => main.filterStringChecker(data.filterString),
 
-    'Palindrome Test' : browser => functions.palindromeChecker(browser, selectors.palindrome, data.palindrome),
+    'Palindrome Test' : browser => main.palindromeChecker(data.palindrome),
 
-    'Sum Test' : browser => functions.sumChecker(browser, selectors.sum, data.sum),
+    'Sum Test' : browser => main.sumChecker(data.sum),
 
 }
